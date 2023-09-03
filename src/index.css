@@ -3,3 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#root{
+  width: 1664px;
+}
+
+
+:root {
+  --main-color: #212121;
+}
+ul,li{
+  list-style: none;
+}
