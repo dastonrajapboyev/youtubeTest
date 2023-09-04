@@ -5,6 +5,7 @@ import "./index.css";
 import Header from "./components/Header";
 import Sedebar from "./components/Sedebar";
 import Navigation from "./components/Navigation";
+import Card from "./components/Card";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     {/* <App /> */}
     <Header />
     <Sedebar />
-    <Navigation/>
+    <Navigation />
+    <Card />
   </React.StrictMode>
 );

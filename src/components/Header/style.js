@@ -49,6 +49,7 @@ Container.Input = styled.input`
   background-color: #000000;
   color: #fff;
   border: none;
+  outline: none;
   padding-left: 10px;
   @media (max-width: 768px){
     width: 200px
