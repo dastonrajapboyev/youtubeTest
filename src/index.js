@@ -5,7 +5,6 @@ import "./index.css";
 import Header from "./components/Header";
 import Sedebar from "./components/Sedebar";
 import Card from "./components/Card";
-import UseSearch from './useSearch'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,8 +13,7 @@ root.render(
     <Header />
     <div style={{ display: "flex" }}>
     <Sedebar />
-    <Card onSearch={onSearch}/>
+    <Card />
     </div>
-    <UseSearch/>
   </React.StrictMode>
 );

@@ -7,21 +7,8 @@ import topBarIcon from "../../assets/icons/topbar.svg";
 import BellIcon from "../../assets/icons/bell.svg";
 import Burger from "../../assets/icons/hamburgerbutton.svg";
 import ProfilePhoto from "../../assets/icons/Profile-Photo.svg";
-import {useSearch} from '../../useSearch';
-
 
 const Header = () => {
-
-  const [searchQuery, onSearch] = useSearch();
-  const [input, setInput] = useState('');
-
-  const handleChange = (event) => {
-    setInput(event.target.value);
-  };
-  const handleClick = () => {
-    props.onSearch(input);
-  };
-
   return (
     <Container>
       <Container.Navbar>
@@ -30,8 +17,8 @@ const Header = () => {
           <Container.LogoImg src={logo} />
         </Container.logoDiv>
         <Container.InputDiv>
-          <Container.Input onChange={handleChange} placeholder="search" />
-          <Container.searchIcon onClick={handleClick} src={SearchIcon} />
+          <Container.Input placeholder="search" />
+          <Container.searchIcon src={SearchIcon} />
         </Container.InputDiv>
         <Container.frame>
           <Container.CameraIcons src={CameraIcon} />

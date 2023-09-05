@@ -1,21 +1,9 @@
-// import React from "react";
+import React from "react";
 import { Container } from "./style";
 import { CardInfo } from "../../mock";
-import React, {useState} from 'react';
-// import {useSearch} from './useSearch.js';
 
-
-function Card(props) {
+function Card() {
   // const  { img, } = props.data
-  const [input, setInput] = useState('');
-
-  const handleChange = (event) => {
-    setInput(event.target.value);
-  };
-  const handleClick = () => {
-    props.onSearch(input);
-  };
-
   return (
     <Container>
       <Container.Nav>
