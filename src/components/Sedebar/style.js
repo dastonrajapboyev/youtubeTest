@@ -13,6 +13,19 @@ Container.LeftNavbarPage = styled.div`
   width: 240px;
 `;
 
+Container.Burger = styled.img`
+cursor: pointer;
+`
+Container.logoDiv = styled.div`
+  display: flex;
+  align-items: center;
+`;
+Container.LogoImg = styled.img`
+  width: 120px;
+  height: 56px;
+  object-fit: cover;
+`;
+
 Container.LeftNavbarOption = styled.div`
   display: flex;
   gap: 26px;
