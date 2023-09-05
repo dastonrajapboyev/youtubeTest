@@ -1,9 +1,21 @@
-import React from "react";
+// import React from "react";
 import { Container } from "./style";
 import { CardInfo } from "../../mock";
+import React, {useState} from 'react';
+// import {useSearch} from './useSearch.js';
 
-function Card() {
+
+function Card(props) {
   // const  { img, } = props.data
+  const [input, setInput] = useState('');
+
+  const handleChange = (event) => {
+    setInput(event.target.value);
+  };
+  const handleClick = () => {
+    props.onSearch(input);
+  };
+
   return (
     <Container>
       <Container.Nav>
@@ -44,7 +56,13 @@ function Card() {
         </Container.NavUl>
       </Container.Nav>
 
-      <div style={{display: 'flex', flexWrap: 'wrap'}}>
+      <div
+        style={{
+          background: "#181818",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+        }}>
         {CardInfo.map((value) => {
           return (
             <>

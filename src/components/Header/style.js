@@ -7,7 +7,8 @@ const Container = styled.div`
 Container.Navbar = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 16px;
 `;
 Container.Burger = styled.img`
 cursor: pointer;

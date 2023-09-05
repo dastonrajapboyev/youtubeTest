@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+/* width: 100%; */
   /* display: inline-block; */
 `;
 
@@ -15,13 +16,16 @@ Container.Nav = styled.nav`
 `;
 
 Container.NavUl = styled.ul`
-  width: 1424px;
+  /* width: 1424px; */
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 12px;
 `;
 
-Container.NavLi = styled.li``;
+Container.NavLi = styled.li`
+cursor: pointer;
+`;
 
 Container.NavItemFirst = styled.p`
   border-radius: 30px;
@@ -41,12 +45,15 @@ Container.NavItem = styled.p`
 /* navigation end*/
 
 Container.Card = styled.div`
+/* width: 100%; */
   padding: 24px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   color: #fff;
   background-color: #181818;
+  @media (max-width: 768px) {
+    flex: 1 1 100%;
+  }
   `;
 
 
@@ -78,6 +85,7 @@ Container.ChannelName = styled.p`
 `;
 
 Container.Statistics = styled.div`
+/* width: 100%; */
   display: flex;
   gap: 6px;
 `;
